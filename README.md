@@ -6,10 +6,10 @@ Lightweight MongoDB docker image on alpine
 version: '3'
 services:
   mongodb:
-    build: ./mongodb
+    image: skazuki/alpine-mongodb:3.6.5-r0
     restart: always
   mongo-express:
-    build: ./mongo-express
+    build: skazuki/alpine-mongo-express:0.47.0
     restart: always
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongodb
