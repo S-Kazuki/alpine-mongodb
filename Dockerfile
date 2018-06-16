@@ -16,6 +16,7 @@ RUN chmod +x /mongodb/docker-entrypoint.sh \
 && TZ=${TZ:-Asia/Tokyo} \
 && cp /usr/share/zoneinfo/$TZ /etc/localtime \
 && echo $TZ> /etc/timezone \
+&& apk del tzdata \
 && rm -rf /var/cache/apk/*
 
 ENTRYPOINT [ "/mongodb/docker-entrypoint.sh" ]
