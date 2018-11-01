@@ -10,7 +10,7 @@ services:
     image: skazuki/alpine-mongodb:4.0.3-r0
     restart: always
   mongo-express:
-    build: skazuki/alpine-mongo-express:0.49.0
+    image: skazuki/alpine-mongo-express:0.49.0
     restart: always
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongodb
