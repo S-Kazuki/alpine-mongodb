@@ -8,7 +8,6 @@ COPY ./db /data/db
 RUN chmod +x /mongodb/docker-entrypoint.sh \
 && apk update \
 && apk add mongodb \
-&& rm /usr/bin/mongoperf \
 && rm -rf /var/cache/apk/* \
 \
 && apk update \
