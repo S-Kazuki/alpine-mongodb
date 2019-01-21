@@ -7,10 +7,12 @@ version: "3.7"
 
 services:
   mongodb:
-    image: skazuki/alpine-mongodb:4.0.3-r0
+    container_name: mongodb
+    image: skazuki/alpine-mongodb
     restart: always
   mongo-express:
-    image: skazuki/alpine-mongo-express:0.49.0
+    container_name: mongo-express
+    image: skazuki/alpine-mongo-express
     restart: always
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongodb
