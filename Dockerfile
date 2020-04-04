@@ -1,4 +1,4 @@
-FROM skazuki/alpine
+FROM alpine:3.9
 
 LABEL maintainer="S-Kazuki<contact@revoneo.com>"
 
