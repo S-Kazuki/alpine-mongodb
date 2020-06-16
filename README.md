@@ -1,7 +1,7 @@
 # alpine-mongodb
 Lightweight MongoDB docker image on alpine
 
-# docker-compose examole with mongo-express
+# docker-compose example with mongo-express
 ```
 version: "3.7"
 
@@ -23,3 +23,6 @@ services:
     links:
       - mongodb:mongodb
 ```
+
+## MongoDB
+version: 4.0.5-r0
